@@ -2,9 +2,9 @@
 .globl main
 
 main:
-    li x24, 10          # loop bound
+    li x24, 10          
     li x26, 0x200        # base address of array a
-    li x23, 0             # sum = 0 (missing before!)
+    li x23, 0             # sum = 0 
 
     li x22, 0             # i = 0
 for1:
@@ -16,7 +16,7 @@ for1:
     beq  x0, x0, for1
 exitFor1:
 
-    li x22, 0             # reset i = 0 
+    li x22, 0             # reseting i = 0 
 for2:
     bge x22, x24, exitFor2
     slli x5, x22, 2        # x5 = i * 4
@@ -26,6 +26,6 @@ for2:
     addi x22, x22, 1
     beq  x0, x0, for2
 exitFor2:
-
+    j end
 end:
     j end
