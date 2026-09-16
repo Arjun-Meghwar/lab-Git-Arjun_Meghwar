@@ -2,7 +2,8 @@
 .globl main 
 main:
     li x10, 3 
-
+    jal x1, fact 
+    j end 
     fact: 
         addi sp, sp, -8 
         sw x1, 4(sp) 
@@ -27,3 +28,6 @@ main:
 
         mul x10, x10, x6 
         jalr x0, 0(x1) 
+   
+end: 
+ j end 
