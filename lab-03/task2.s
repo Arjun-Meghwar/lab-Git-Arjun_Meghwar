@@ -24,7 +24,7 @@ main:
     lw x20, 0(sp)
 
     addi sp, sp, 12 # deallocating the stack space 
-
+    j end 
     leaf_example: 
     
         add x18, x10, x11
@@ -34,3 +34,5 @@ main:
         addi x10, x20, 0 
 
         jalr x0, 0(x1) 
+end:    
+    j end 
