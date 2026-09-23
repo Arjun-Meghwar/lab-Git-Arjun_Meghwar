@@ -3,8 +3,21 @@
 main:
     li x10, 4 
     addi sp, sp, -8
-    sw x10, 4(sp) #
+    sw x10, 4(sp) 
     sw x1,  0(sp)
+    jal x1, fact
+    add x11, x10, x0 
+    addi x10, x0, 1 
+    ecall     # printing answer 
+
+    #Restoring main values 
+
+    lw x10, 4(sp) 
+    lw x1, 0(sp) 
+    #Dealocating stack 
+    addi sp, sp, 8 
+    j end
+
     fact:
         li x5, 1 # acc
         li x6, 0 
@@ -18,14 +31,8 @@ main:
             addi x10, x10, -1 
             j cond 
 exitFact:
-        add x11, x10, x0 
-        addi x10, x0, 1 
-        ecall     # printing answer
+       
+        jalr x0, 0(x1) 
         
-        #Restoring main values 
-        lw x10, 4(sp) 
-        lw x1, 0(sp) 
-        #Dealocating stack 
-        addi sp, sp, 8 
 end:
     j end 
