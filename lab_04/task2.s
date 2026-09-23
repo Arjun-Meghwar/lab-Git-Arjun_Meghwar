@@ -2,7 +2,13 @@
 .globl main 
 main:
     
-    li x10, 4 
+    li x10, 4
+    jal x1, ntri  
+    addi x11, x10,0  
+    li x10, 1 
+    ecall 
+    j end
+
     ntri:
         
         addi sp, sp, -8
@@ -28,5 +34,6 @@ main:
         add x10, x6, x10 
         
         jalr x0, 0(x1) # jumping to line 23  
-
+end: 
+    j end
         
