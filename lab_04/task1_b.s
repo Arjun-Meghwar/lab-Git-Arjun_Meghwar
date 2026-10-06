@@ -30,9 +30,7 @@ main:
             mul x5, x5, x10 
             addi x10, x10, -1 
             j cond 
-exitFact:
-       
+exitFact:  
         jalr x0, 0(x1) 
-        
 end:
     j end 
