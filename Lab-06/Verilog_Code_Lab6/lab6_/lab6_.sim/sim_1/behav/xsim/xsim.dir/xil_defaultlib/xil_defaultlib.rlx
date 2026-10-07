@@ -1,0 +1,9 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/akarj/Desktop/lab6_/lab6_/lab6_.sim/sim_1/behav/xsim/glbl.v,1791361718,verilog,,,,glbl,,,,,,,,
+C:/Users/akarj/Desktop/lab6_/lab6_/lab6_.srcs/sim_1/new/alu1_task2.v,1791361719,verilog,,,,alu1_task2,,,,,,,,
+C:/Users/akarj/Desktop/lab6_/lab6_/lab6_.srcs/sim_1/new/alu_32bit_task2_tb.v,1791363672,verilog,,,,alu_32bit_task2_tb,,,,,,,,
+C:/Users/akarj/Desktop/lab6_/lab6_/lab6_.srcs/sources_1/new/alu_1.v,1791362970,verilog,,C:/Users/akarj/Desktop/lab6_/lab6_/lab6_.srcs/sim_1/new/alu1_task2.v,,alu_1,,,,,,,,
+C:/Users/akarj/Desktop/lab6_/lab6_/lab6_.srcs/sources_1/new/alu_32bit_WithControl.v,1791361720,verilog,,C:/Users/akarj/Desktop/lab6_/lab6_/lab6_.srcs/sim_1/new/alu_32bit_task2_tb.v,,alu_32bit_WithControl,,,,,,,,
